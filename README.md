@@ -32,9 +32,10 @@ Os dados contidos no csv estão divididos em dados de treino e de test, e neles 
   |7|7|
   |8|8|
   |9|9|
-  |4|Valete|
-  |4|Dama|
-  |4|Rei|
+  |10|10|
+  |11|Valete|
+  |12|Dama|
+  |13|Rei|
   
   * ***Classificação da mão***
  
