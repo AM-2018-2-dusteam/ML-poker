@@ -5,11 +5,11 @@ from sklearn.neighbors import RadiusNeighborsClassifier
 train = pd.read_csv('../train.csv')
 target = train['class'].values
 features = train.drop(['class', 'suit_1', 'suit_2',
-                       'suit_3', 'suit_4'], axis=1).values
+                       'suit_3', 'suit_4', 'suit_5'], axis=1).values
 test = pd.read_csv('../test.csv')
 test = test.dropna()
 tfeatures = test.drop(['class', 'suit_1', 'suit_2',
-                       'suit_3', 'suit_4'], axis=1).values
+                       'suit_3', 'suit_4', 'suit_5'], axis=1).values
 ttarget = test['class'].values
 
 # realizando treinamento e avaliando predição
