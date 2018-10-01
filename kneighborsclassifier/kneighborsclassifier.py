@@ -4,9 +4,12 @@ from sklearn.neighbors import KNeighborsClassifier
 # dividindo treinamento e teste
 train = pd.read_csv('../train.csv')
 target = train['class'].values
-features = train.drop('class', axis=1).values
+features = train.drop(['class', 'suit_1', 'suit_2',
+                       'suit_3', 'suit_4'], axis=1).values
 test = pd.read_csv('../test.csv')
-tfeatures = test.drop('class', axis=1).values
+test = test.dropna()
+tfeatures = test.drop(['class', 'suit_1', 'suit_2',
+                       'suit_3', 'suit_4'], axis=1).values
 ttarget = test['class'].values
 
 # realizando treinamento e avaliando predição
